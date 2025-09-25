@@ -1,34 +1,30 @@
 package org.example.task2;
 
-public class Item {
-    private long id;
+public class Box {
+    private int id;
     private String name;
     private double price;
 
-    public Item(long id, String name, double price) {
+    public Box(int id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    public long getId() {
+    public int getId() {
         return this.id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getName() {
         return this.name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double getPrice() {
         return this.price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setPrice(double price) {
@@ -37,10 +33,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
-                "id=" + this.id +
-                ", price=" + this.price +
-                ", name='" + this.name + '\'' +
-                '}' + "\n";
+        return "Box{id=" + this.id + ", name='" + this.name + "', price=" + this.price + "}";
     }
 }
